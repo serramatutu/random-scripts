@@ -24,8 +24,7 @@ def main(infile: str, outfile: str):
                 curr_path.pop()
         else:
             file_name = line.replace("|", "").replace(" ", "")
-            if file_name.endswith(".wav"):
-                files.append("/".join(curr_path) + "/" + file_name)
+            files.append("/".join(curr_path) + "/" + file_name)
     
     with open(outfile, "w") as file:
         file.write("\n".join(files))
