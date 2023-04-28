@@ -1,3 +1,5 @@
+"""Helper to sort through my Fuji camera's RAW and JPEG files."""
+
 import os
 import sys
 import shutil
